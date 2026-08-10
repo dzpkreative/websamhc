@@ -1,6 +1,6 @@
 # Panduan Redesain Website SAMHC (hericahyono.com)
 
-Dokumen ini berfungsi sebagai panduan utama (*master blueprint*) pelaksanaan redesain website **Heri Cahyono (SAMHC)**. Website ini difokuskan sebagai **repositori artikel & berita kegiatan** dengan tampilan yang **elegan, minimalis, dan profesional** berbasis WordPress.
+Dokumen ini berfungsi sebagai panduan utama (*master blueprint*) pelaksanaan redesain website **Heri Cahyono (SAMHC)**. Website ini difokuskan sebagai **repositori artikel & berita kegiatan** dengan tampilan yang **elegan, minimalis, profesional, dan 100% Mobile-Friendly** berbasis WordPress.
 
 ---
 
@@ -9,7 +9,7 @@ Dokumen ini berfungsi sebagai panduan utama (*master blueprint*) pelaksanaan red
 * **Domain:** `https://hericahyono.com`
 * **Tokoh / Brand:** Heri Cahyono (Sam HC)
 * **Niche:** Website Personal Branding, Repositori Berita, & Program Inisiatif Sosial
-* **Target Tampilan:** Elegan, Minimalis, High-Class Editorial, Fast-Loading
+* **Target Tampilan:** Elegan, Minimalis, High-Class Editorial, Fast-Loading, Fully Responsive (Mobile First)
 * **CMS Target:** WordPress (menggunakan Block Editor / Gutenberg FSE atau Kadence/Blocksy)
 * **Navigasi Header (Menu Utama):**
   1. **Profil** (`/profile/`)
@@ -19,7 +19,7 @@ Dokumen ini berfungsi sebagai panduan utama (*master blueprint*) pelaksanaan red
 
 ---
 
-## 2. Style Guide & Sistem Desain
+## 2. Style Guide & Sistem Desain Mobile-Friendly
 
 ### A. Skema Warna (*Color Palette*)
 | Peran | Nama Warna | Kode Hex | Penggunaan |
@@ -31,87 +31,57 @@ Dokumen ini berfungsi sebagai panduan utama (*master blueprint*) pelaksanaan red
 | **Adventure Dark Theme** | Deep Navy Slate | `#0F172A` | Background khusus kanal "Sam HC Jelajah Bumi" |
 | **Card / Surface** | Pure White | `#FFFFFF` | Latar belakang kartu artikel & modal |
 
-### B. Tipografi (*Typography*)
-* **Heading (H1, H2, H3):** `Lora` atau `Playfair Display` (Font Serif Editorial yang mencerminkan kedewasaan, wibawa, dan intelektualitas).
-* **Body Text & Navigation:** `Plus Jakarta Sans` atau `Inter` (Font Sans-Serif modern yang sangat bersih dan nyaman dibaca).
+### B. Tipografi Fluid (*Fluid Typography*)
+* **Heading (H1, H2, H3):** `Lora` atau `Playfair Display` dengan CSS `clamp(22px, 3.5vw, 34px)` agar ukuran font otomatis menyesuaikan lebar layar smartphone hingga desktop tanpa merusak layout.
+* **Body Text & Navigation:** `Plus Jakarta Sans` atau `Inter` (Font Sans-Serif modern yang sangat bersih, mudah dibaca, dan berbobot ringan di HP).
 
 ---
 
-## 3. Wireframe & Alur Konten Halaman Utama (*Homepage Flow*)
+## 3. Optimasi Responsif Mobile (*Mobile Responsive Architecture*)
 
 ```
-+-----------------------------------------------------------------------------------+
-|  [LOGO SAMHC]        Profil     Blog     Pusat Curhat Rakyat     Bank Ide  [🔍 Cari]| <-- Header (4 Menu Utama)
-+-----------------------------------------------------------------------------------+
-|                                                                                   |
-|  HERO SECTION: FOTO PERSONAL & QUOTE INSPIRATIF                                   |
-|  +---------------------------------------+  +----------------------------------+  |
-|  |                                       |  |  "SEBUAH KESADARAN"              |  |
-|  |  [ FOTO PERSONAL PORTRAIT SAM HC ]    |  |  "Keberhasilan hidup bukan diukur|  |
-|  |                                       |  |   dari apa yang kita miliki..."  |  |
-|  |                                       |  |  - Heri Cahyono (Sam HC)         |  |
-|  |                                       |  |  Bio Singkat & Button CTA        |  |
-|  +---------------------------------------+  +----------------------------------+  |
-|                                                                                   |
-+-----------------------------------------------------------------------------------+
-|  SECTION 2: BERITA & KEGIATAN TERBARU                                             |
-|  [ 🔍 Input Live Search ]  [ Filter Pills: Semua | Kegiatan | Opini | 2026 ]      |  <-- Live Search & Filter
-|  +---------------------+  +---------------------+  +---------------------+        |
-|  | [ Foto Artikel 1 ]  |  | [ Foto Artikel 2 ]  |  | [ Foto Artikel 3 ]  |        |
-|  | Kunjungan Alumni    |  | Malang City Talents |  | Polemik Parkir      |        |
-|  +---------------------+  +---------------------+  +---------------------+        |
-|                                                                                   |
-+-----------------------------------------------------------------------------------+
-|  SECTION 3: KANAL KHUSUS "SAM HC JELAJAH BUMI" (Style Dark Adventure)             |
-|  Tajuk: "From Indonesia to See Your Beautiful Country"                            |
-|  [ STATS BAR: 14 Negara • 2 Benua • Overland Journey • Misi Persaudaraan ]          |  <-- Travel Stats Bar
-|  +---------------------+  +---------------------+  +---------------------+        |
-|  | [ Foto Overland 1 ] |  | [ Foto Overland 2 ] |  | [ Foto Overland 3 ] |        |
-|  | Asian Overland      |  | Perbatasan 14 Negara|  | Refleksi Kemandirian|        |
-|  +---------------------+  +---------------------+  +---------------------+        |
-|                                                                                   |
-+-----------------------------------------------------------------------------------+
-|  SECTION 4: DOKUMENTASI VIDEO HIGHLIGHT                                           |
-|  [ Player Video Youtube/TikTok Showcase - Liputan 14 Negara & Kegiatan ]          |  <-- Video Highlight Section
-|                                                                                   |
-+-----------------------------------------------------------------------------------+
-|  SECTION 5: PROGRAM KERJA & INISIATIF SOSIAL                                      |
-|  Grid 8 Kartu Program Kerja Mandiri Utama                                         |
-|  [ Button CTA: Lihat Seluruh 16 Program Kerja & Inisiatif Sosial → ]               |  <-- Program CTA Button
-|                                                                                   |
-+-----------------------------------------------------------------------------------+
-|  SECTION 6: INTERAKSI WARGA (DUAL BANNER CTA)                                     |
-|  +---------------------------------------+  +----------------------------------+  |
-|  | PUSAT CURHAT RAKYAT                   |  | BANK IDE RAKYAT                  |  |
-|  | Sampaikan keluhan & aspirasimu.       |  | Sumbangkan ide inovatifmu.       |  |
-|  | [ Tombol: Tulis Curhatan → ]          |  | [ Tombol: Kirimkan Ide → ]       |  |
-|  +---------------------------------------+  +----------------------------------+  |
-|                                                                                   |
-+-----------------------------------------------------------------------------------+
-|  FOOTER: Logo, Navigasi Utama, Legalitas, & Hak Cipta                             |
-+-----------------------------------------------------------------------------------+
+DESKTOP VIEW (Width > 900px)                 MOBILE VIEW (Width <= 900px)
++-------------------------------+             +-------------------------------+
+| LOGO     Menu Links     Search|             | LOGO                  [ ☰ ]  |  <-- Mobile Hamburger
++-------------------------------+             +-------------------------------+
+| Hero (Foto Left | Quote Right)|             | [ ☰ Drawer ]  Menu Dropdown   |
+| 3-Column News Grid            |  =========> | Hero Photo (280px-320px)      |
+| 4-Column Overland Stats Bar   |             | Quote + Full-Width Buttons    |
+| 4-Column Program Grid         |             | 1-Column News Grid Stack      |
+| Dual-Banner 2-Column Side     |             | Horizontal Scroll Filter Pills|
++-------------------------------+             | 2x2 Stats Bar Grid            |
+                                              | 2/1-Column Program Grid       |
+                                              | Full-Width Dual Banner Stack  |
+                                              +-------------------------------+
 ```
+
+### Key Mobile Enhancements:
+1. **Header Navigation Drawer:** Tombol Hamburger `☰` otomatis muncul di layar HP. Ketika diklik, menampilkan drawer navigasi halus berisi 4 menu utama + pencarian.
+2. **Horizontal Scroll Filter Pills:** Filter kategori berita di HP dapat digeser secara horizontal (*native touch drag*) tanpa memakan banyak tempat vertikal.
+3. **Stacked Hero CTA:** Tombol CTA (*Kenal Lebih Dekat* & *Pusat Curhat Rakyat*) berubah menjadi 100% lebar layar di HP agar mudah ditap dengan jempol (*thumb-friendly*).
+4. **Adaptive Stats & Program Grid:** Bar statistik 14 negara beradaptasi menjadi grid 2x2 pada layar HP. Grid Program Kerja menyesuaikan dari 4 kolom menjadi 2 atau 1 kolom.
 
 ---
 
-## 4. Rincian Fitur & Modul Halaman Utama
+## 4. Wireframe & Alur Konten Halaman Utama (*Homepage Flow*)
 
-1. **Header Navigation:** Ditingkatkan fokusnya menjadi 4 menu utama saja (*Profil, Blog, Pusat Curhat Rakyat, Bank Ide*).
-2. **Hero Section:** Foto personal portrait Sam HC + Quote Inspiratif *"Sebuah Kesadaran"*.
-3. **Berita & Kegiatan:** Repositori artikel berita terkini dilengkapi dengan **Live AJAX Instant Search Box** dan **Pill Filters** berdasarkan topik/tahun.
+1. **Header (Mobile Drawer Enabled):** Logo SAMHC, 4 Menu Utama, Mobile Toggle `☰`.
+2. **Hero Section:** Portrait Photo Sam HC + Quote Inspiratif *"Sebuah Kesadaran"* + Tombol CTA.
+3. **Berita & Kegiatan Terbaru:** Repositori artikel berita terkini dengan **Live Instant Search** & **Touch Horizontal Filter Pills**.
 4. **Kanal "Sam HC Jelajah Bumi":**
    * **Tajuk Utama:** *"From Indonesia to See Your Beautiful Country"*
-   * **Stats Bar:** *14 Negara • 2 Benua • Overland Journey • Misi Persaudaraan*.
-   * **Fokus Konten:** Dokumentasi naratif perjalanan *overland* Sam HC berkendara melintasi 14 Negara membawa misi kebudayaan dan persaudaraan antarbangsa.
-5. **Dokumentasi Video Highlight:** Block pemutar video YouTube/TikTok embed untuk liputan perjalanan & aksi sosial.
-6. **Program Kerja:** Showcase 8 program kerja utama dengan tombol tautan menuju katalog penuh 16 program kerja.
-7. **Ruang Interaksi Warga (Dual Banner):** Call-to-Action interaktif untuk penyerapan aspirasi (*Pusat Curhat Rakyat*) dan penampungan gagasan (*Bank Ide*).
+   * **Stats Bar Mobile Grid (2x2):** *14 Negara • 2 Benua • Overland Journey • Misi Persaudaraan*.
+   * **Artikel Overland:** Catatan perjalanan melintasi 14 Negara.
+5. **Dokumentasi Video Highlight:** Pemutar video YouTube/TikTok embed yang *responsive height*.
+6. **Program Kerja:** Grid kartu 8 program utama + Tombol CTA ke katalog penuh 16 program.
+7. **Ruang Interaksi Warga (Dual Banner Stack):** Banner aspirasi (*Pusat Curhat Rakyat*) & gagasan (*Bank Ide*).
 
 ---
 
 ## 5. Checklist Perbaikan Data & Cleanup WordPress
 
 - [x] **Revisi Header Menu:** Hanya tampilkan Profil, Blog, Pusat Curhat Rakyat, Bank Ide.
+- [x] **Optimasi Mobile Friendly:** Drawer Mobile Menu, Responsive Spacing, Fluid Typography, Touch Scroll Pills.
 - [x] **Penambahan Interaksi Warga:** Dual Banner untuk Curhat Rakyat & Bank Ide di halaman depan.
 - [x] **Penambahan Feature Jelajah Bumi:** Tajuk "From Indonesia to See Your Beautiful Country" & Stats Bar 14 Negara.
 - [ ] **Koreksi Typo WordPress Title:**
@@ -126,13 +96,13 @@ Dokumen ini berfungsi sebagai panduan utama (*master blueprint*) pelaksanaan red
 
 ---
 
-## 6. Rekomendasi Tech Stack WordPress (Lightweight & Modern)
+## 6. Rekomendasi Tech Stack WordPress (Lightweight & Mobile-Optimized)
 
-* **Theme Base:** Kadence Theme / Blocksy (Versi Gratis/Pro).
-* **Page Builder:** Gutenberg / Native Block Editor + Kadence Blocks (Hindari Elementor jika ingin performa maksimal).
+* **Theme Base:** Kadence Theme / Blocksy (Sangat responsive & mendukung mobile menu custom bawaan).
+* **Page Builder:** Gutenberg / Native Block Editor + Kadence Blocks (Performa mobile tercepat tanpa bloated code).
 * **Plugin Pencarian:** SearchXP / Ivory Search (AJAX Live Search).
 * **Optimasi Gambar & Speed:** WP Rocket / LiteSpeed Cache + ShortPixel (auto WebP conversion).
 * **SEO:** Rank Math / Yoast SEO.
 
 ---
-*Dokumen ini diperbarui secara otomatis sesuai instruksi revisi & analisis lengkap desainer.*
+*Dokumen ini diperbarui secara otomatis sesuai instruksi optimasi versi Mobile Friendly.*
