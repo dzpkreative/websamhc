@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <style>
         :root {
             --bg-main: #FAFAFA;
@@ -100,7 +103,8 @@
             transition: color 0.2s;
         }
 
-        .nav-links a:hover, .nav-links a.active {
+        .nav-links a:hover,
+        .nav-links a.active {
             color: var(--accent-gold);
         }
 
@@ -159,7 +163,7 @@
             background: white;
             border-bottom: 1px solid var(--border-color);
             padding: 20px 24px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
             z-index: 99;
             flex-direction: column;
             gap: 16px;
@@ -185,7 +189,8 @@
             background: #F8FAFC;
         }
 
-        .mobile-nav-links a:hover, .mobile-nav-links a.active {
+        .mobile-nav-links a:hover,
+        .mobile-nav-links a.active {
             background: var(--accent-gold-light);
             color: var(--accent-gold);
         }
@@ -210,7 +215,7 @@
             border-radius: 16px;
             overflow: hidden;
             background: #CBD5E1;
-            box-shadow: 0 16px 36px rgba(0,0,0,0.08);
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
         }
 
         .hero-photo-frame img {
@@ -352,11 +357,13 @@
             overflow-x: auto;
             padding-bottom: 4px;
             -webkit-overflow-scrolling: touch;
-            scrollbar-width: none; /* Firefox */
+            scrollbar-width: none;
+            /* Firefox */
         }
 
         .filter-pills::-webkit-scrollbar {
-            display: none; /* Safari/Chrome */
+            display: none;
+            /* Safari/Chrome */
         }
 
         .pill {
@@ -371,7 +378,8 @@
             transition: all 0.2s;
         }
 
-        .pill.active, .pill:hover {
+        .pill.active,
+        .pill:hover {
             background: var(--text-main);
             color: white;
         }
@@ -394,7 +402,7 @@
 
         .news-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 16px 32px rgba(0,0,0,0.06);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.06);
         }
 
         .card-img-wrap {
@@ -502,10 +510,10 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
-            background: rgba(255,255,255,0.05);
+            background: rgba(255, 255, 255, 0.05);
             padding: 20px 24px;
             border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             margin-bottom: 32px;
         }
 
@@ -590,13 +598,13 @@
             align-items: center;
             justify-content: center;
             color: white;
-            box-shadow: 0 16px 36px rgba(0,0,0,0.12);
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
         }
 
         .video-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.85) 100%);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.85) 100%);
             padding: 30px;
             display: flex;
             flex-direction: column;
@@ -649,7 +657,7 @@
         .program-card:hover {
             transform: translateY(-3px);
             border-color: var(--accent-gold);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.04);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04);
         }
 
         .program-icon {
@@ -713,7 +721,7 @@
         }
 
         .banner-badge {
-            background: rgba(255,255,255,0.15);
+            background: rgba(255, 255, 255, 0.15);
             padding: 4px 12px;
             border-radius: 20px;
             font-size: 11px;
@@ -795,7 +803,8 @@
                 padding: 0 18px;
             }
 
-            .nav-links, .search-btn {
+            .nav-links,
+            .search-btn {
                 display: none;
             }
 
@@ -818,7 +827,8 @@
                 width: 100%;
             }
 
-            .btn-primary, .btn-secondary {
+            .btn-primary,
+            .btn-secondary {
                 width: 100%;
             }
 
@@ -837,7 +847,8 @@
                 width: 100%;
             }
 
-            .news-grid, .adventure-grid {
+            .news-grid,
+            .adventure-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -894,12 +905,14 @@
             .program-grid {
                 grid-template-columns: 1fr;
             }
+
             .hero-photo-frame {
                 height: 280px;
             }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header & Mobile Drawer Menu -->
@@ -933,29 +946,34 @@
                 <li><a href="#">Pusat Curhat Rakyat</a></li>
                 <li><a href="#">Bank Ide</a></li>
             </ul>
-            <input type="text" class="live-search-input" placeholder="🔍 Cari berita atau kegiatan..." style="width: 100%;">
+            <input type="text" class="live-search-input" placeholder="🔍 Cari berita atau kegiatan..."
+                style="width: 100%;">
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="container">
-        
+
         <!-- Hero Section: Foto Personal & Quote Inspiratif -->
         <section class="hero">
             <div class="hero-layout">
                 <div class="hero-photo-container">
                     <div class="hero-photo-frame">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Heri Cahyono (Sam HC)">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
+                            alt="Heri Cahyono (Sam HC)">
                     </div>
                 </div>
 
                 <div class="hero-quote-box">
                     <span class="quote-badge">Sebuah Kesadaran</span>
                     <blockquote class="hero-quote">
-                        "Keberhasilan hidup bukan diukur dari apa yang kita miliki untuk diri sendiri, melainkan seberapa besar manfaat yang bisa kita bagikan kepada sesama dan bangsa."
+                        "Keberhasilan hidup bukan diukur dari apa yang kita miliki untuk diri sendiri, melainkan
+                        seberapa besar manfaat yang bisa kita bagikan kepada sesama dan bangsa."
                     </blockquote>
                     <p class="hero-bio">
-                        <b>Heri Cahyono (Sam HC)</b> — Pria kelahiran Malang yang mengawali karir dari bawah sebagai pencari kayu bakar, tukang ojek, tukang las, mekanik mobil, hingga menjadi pengusaha dan penggerak inisiatif sosial masyarakat.
+                        <b>Heri Cahyono (Sam HC)</b> — Pria kelahiran Malang yang mengawali karir dari bawah sebagai
+                        pencari kayu bakar, tukang ojek, tukang las, mekanik mobil, hingga menjadi pengusaha dan
+                        penggerak inisiatif sosial masyarakat.
                     </p>
                     <div class="hero-actions">
                         <a href="#" class="btn-primary">Kenal Lebih Dekat</a>
@@ -970,16 +988,19 @@
             <div class="section-header">
                 <div>
                     <h2 class="section-title">Berita & Kegiatan Terbaru</h2>
-                    <p class="section-subtitle">Dokumentasi aktivitas, pemikiran, dan ragam kegiatan kemasyarakatan Sam HC.</p>
+                    <p class="section-subtitle">Dokumentasi aktivitas, pemikiran, dan ragam kegiatan kemasyarakatan Sam
+                        HC.</p>
                 </div>
                 <div>
-                    <a href="#" style="color: var(--accent-gold); font-weight: 600; font-size: 14px;">Lihat Semua Berita →</a>
+                    <a href="#" style="color: var(--accent-gold); font-weight: 600; font-size: 14px;">Lihat Semua Berita
+                        →</a>
                 </div>
             </div>
 
             <!-- Live Instant Search & Filter Bar -->
             <div class="search-filter-bar">
-                <input type="text" id="newsSearchInput" class="live-search-input" placeholder="🔍 Cari berita atau kegiatan...">
+                <input type="text" id="newsSearchInput" class="live-search-input"
+                    placeholder="🔍 Cari berita atau kegiatan...">
                 <div class="filter-pills" id="filterPills">
                     <span class="pill active" data-filter="all">Semua</span>
                     <span class="pill" data-filter="sosial">Kegiatan Sosial</span>
@@ -992,36 +1013,45 @@
             <div class="news-grid" id="newsGrid">
                 <article class="news-card" data-category="sosial 2026">
                     <div class="card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80" alt="Kunjungan Alumni">
+                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80"
+                            alt="Kunjungan Alumni">
                     </div>
                     <div class="card-body">
                         <span class="category-tag">Kegiatan Sosial</span>
-                        <h3 class="card-title"><a href="#">Kunjungan Alumni Shalahuddin 77 di Kediaman Sam HC Pesantren Kalasuba</a></h3>
-                        <p style="font-size: 14px; color: #475569;">Sam HC menyambut hangat kedatangan rombongan alumni di Kasembon untuk berdiskusi pemberdayaan ummat.</p>
+                        <h3 class="card-title"><a href="#">Kunjungan Alumni Shalahuddin 77 di Kediaman Sam HC Pesantren
+                                Kalasuba</a></h3>
+                        <p style="font-size: 14px; color: #475569;">Sam HC menyambut hangat kedatangan rombongan alumni
+                            di Kasembon untuk berdiskusi pemberdayaan ummat.</p>
                         <div class="card-meta">10 Agustus 2026 • 3 Min Baca</div>
                     </div>
                 </article>
 
                 <article class="news-card" data-category="visi 2026">
                     <div class="card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80" alt="Visi SDM">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80"
+                            alt="Visi SDM">
                     </div>
                     <div class="card-body">
                         <span class="category-tag">Opini & Visi</span>
-                        <h3 class="card-title"><a href="#">Malang City of Talents: Visi Sam HC Dalam Meningkatkan Kualitas SDM Pemuda</a></h3>
-                        <p style="font-size: 14px; color: #475569;">Gagasan strategis dalam membangun ekosistem talenta muda Malang yang mandiri dan berdaya saing global.</p>
+                        <h3 class="card-title"><a href="#">Malang City of Talents: Visi Sam HC Dalam Meningkatkan
+                                Kualitas SDM Pemuda</a></h3>
+                        <p style="font-size: 14px; color: #475569;">Gagasan strategis dalam membangun ekosistem talenta
+                            muda Malang yang mandiri dan berdaya saing global.</p>
                         <div class="card-meta">08 Agustus 2026 • 4 Min Baca</div>
                     </div>
                 </article>
 
                 <article class="news-card" data-category="malang 2026">
                     <div class="card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=600&q=80" alt="Polemik Parkir">
+                        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=600&q=80"
+                            alt="Polemik Parkir">
                     </div>
                     <div class="card-body">
                         <span class="category-tag">Seputar Malang</span>
-                        <h3 class="card-title"><a href="#">Mengurai Polemik Parkir dan Kemacetan di Kota Malang Secara Berkelanjutan</a></h3>
-                        <p style="font-size: 14px; color: #475569;">Analisis dan tawaran solusi konkret terkait penataan tata ruang dan manajemen transportasi publik.</p>
+                        <h3 class="card-title"><a href="#">Mengurai Polemik Parkir dan Kemacetan di Kota Malang Secara
+                                Berkelanjutan</a></h3>
+                        <p style="font-size: 14px; color: #475569;">Analisis dan tawaran solusi konkret terkait penataan
+                            tata ruang dan manajemen transportasi publik.</p>
                         <div class="card-meta">02 Agustus 2026 • 5 Min Baca</div>
                     </div>
                 </article>
@@ -1035,7 +1065,8 @@
                 <h2 class="adventure-title">Sam HC Jelajah Bumi</h2>
                 <p class="adventure-subtitle">
                     Tajuk Utama: <b>"From Indonesia to See Your Beautiful Country"</b><br>
-                    Catatan perjalanan inspiratif Sam HC berkendara menembus perbatasan lintas negara membawa pesan perdamaian, kebudayaan, dan persaudaraan antarbangsa.
+                    Catatan perjalanan inspiratif Sam HC berkendara menembus perbatasan lintas negara membawa pesan
+                    perdamaian, kebudayaan, dan persaudaraan antarbangsa.
                 </p>
             </div>
 
@@ -1061,29 +1092,40 @@
 
             <div class="adventure-grid">
                 <article class="adventure-card">
-                    <img class="adventure-card-img" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80" alt="Jelajah 14 Negara 1">
+                    <img class="adventure-card-img" src="assets\images\Pres-Con_Sam-HC_Jelajah_Bumi.webp"
+                        alt="Jelajah 14 Negara 1">
                     <div class="adventure-card-body">
                         <span class="adventure-country-badge">🌍 ASIAN OVERLAND • 14 NEGARA</span>
-                        <h3 class="adventure-card-title"><a href="#">Awal Perjalanan: Misi Kemanusiaan & Kebudayaan Menembus Asia Tenggara</a></h3>
-                        <p style="font-size: 13px; color: #94A3B8;">Kisah melintasi perbatasan darat dengan semangat mengibarkan Sang Saka Merah Putih.</p>
+                        <h3 class="adventure-card-title"><a href="#">Awal Perjalanan: Misi Kemanusiaan & Kebudayaan
+                                Menembus Asia Tenggara</a></h3>
+                        <p style="font-size: 13px; color: #94A3B8;">Kisah melintasi perbatasan darat dengan semangat
+                            mengibarkan Sang Saka Merah Putih.</p>
                     </div>
                 </article>
 
                 <article class="adventure-card">
-                    <img class="adventure-card-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Jelajah 14 Negara 2">
+                    <img class="adventure-card-img"
+                        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                        alt="Jelajah 14 Negara 2">
                     <div class="adventure-card-body">
                         <span class="adventure-country-badge">🏔️ PERSAUDARAAN TANPA BATAS</span>
-                        <h3 class="adventure-card-title"><a href="#">"From Indonesia to See Your Beautiful Country": Menjalin Sahabat di Jalur Sutra</a></h3>
-                        <p style="font-size: 13px; color: #94A3B8;">Pengalaman berinteraksi langsung dengan warga lokal di pelosok negeri sahabat.</p>
+                        <h3 class="adventure-card-title"><a href="#">"From Indonesia to See Your Beautiful Country":
+                                Menjalin Sahabat di Jalur Sutra</a></h3>
+                        <p style="font-size: 13px; color: #94A3B8;">Pengalaman berinteraksi langsung dengan warga lokal
+                            di pelosok negeri sahabat.</p>
                     </div>
                 </article>
 
                 <article class="adventure-card">
-                    <img class="adventure-card-img" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=600&q=80" alt="Jelajah 14 Negara 3">
+                    <img class="adventure-card-img"
+                        src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=600&q=80"
+                        alt="Jelajah 14 Negara 3">
                     <div class="adventure-card-body">
                         <span class="adventure-country-badge">📖 REFLEKSI KEMANDIRIAN</span>
-                        <h3 class="adventure-card-title"><a href="#">Pelajaran Dari 14 Negara: Bagaimana Bangsa Lain Membangun Kemandirian Warga</a></h3>
-                        <p style="font-size: 13px; color: #94A3B8;">Catatan reflektif yang menjadi inspirasi lahirnya program pensiun sosial Sam HC.</p>
+                        <h3 class="adventure-card-title"><a href="#">Pelajaran Dari 14 Negara: Bagaimana Bangsa Lain
+                                Membangun Kemandirian Warga</a></h3>
+                        <p style="font-size: 13px; color: #94A3B8;">Catatan reflektif yang menjadi inspirasi lahirnya
+                            program pensiun sosial Sam HC.</p>
                     </div>
                 </article>
             </div>
@@ -1094,17 +1136,21 @@
             <div class="section-header">
                 <div>
                     <h2 class="section-title">Dokumentasi Video Highlight</h2>
-                    <p class="section-subtitle">Tonton cuplikan perjalanan, diskusi kemasyarakatan, dan aksi sosial Sam HC.</p>
+                    <p class="section-subtitle">Tonton cuplikan perjalanan, diskusi kemasyarakatan, dan aksi sosial Sam
+                        HC.</p>
                 </div>
             </div>
 
             <div class="video-card-featured">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Video Highlight" style="width:100%; height:100%; object-fit:cover; opacity: 0.5;">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+                    alt="Video Highlight" style="width:100%; height:100%; object-fit:cover; opacity: 0.5;">
                 <div class="video-overlay">
                     <div class="play-icon">▶</div>
                     <span class="category-tag" style="width: fit-content;">DOKUMENTASI SPESIAL</span>
-                    <h3 style="font-family: var(--font-heading); font-size: clamp(18px, 2.5vw, 26px); margin-top: 8px;">Kisah Perjalanan 14 Negara & Perjuangan Kemandirian Warga Malang</h3>
-                    <p style="font-size: 13px; color: #E2E8F0; margin-top: 4px;">Durasi: 12 Menit • Channel YouTube Resmi Sam HC</p>
+                    <h3 style="font-family: var(--font-heading); font-size: clamp(18px, 2.5vw, 26px); margin-top: 8px;">
+                        Kisah Perjalanan 14 Negara & Perjuangan Kemandirian Warga Malang</h3>
+                    <p style="font-size: 13px; color: #E2E8F0; margin-top: 4px;">Durasi: 12 Menit • Channel YouTube
+                        Resmi Sam HC</p>
                 </div>
             </div>
         </section>
@@ -1114,7 +1160,8 @@
             <div class="section-header">
                 <div>
                     <h2 class="section-title">Program Kerja & Inisiatif Sosial</h2>
-                    <p class="section-subtitle">Rangkaian program mandiri dan aksi nyata Sam HC dalam pemberdayaan ekonomi & sosial ummat.</p>
+                    <p class="section-subtitle">Rangkaian program mandiri dan aksi nyata Sam HC dalam pemberdayaan
+                        ekonomi & sosial ummat.</p>
                 </div>
             </div>
 
@@ -1122,13 +1169,15 @@
                 <div class="program-card">
                     <div class="program-icon">🏭</div>
                     <div class="program-name">Kampoeng Manajemen</div>
-                    <div class="program-desc">Pelatihan tata kelola usaha dan manajemen praktis bagi pelaku UMKM lokal.</div>
+                    <div class="program-desc">Pelatihan tata kelola usaha dan manajemen praktis bagi pelaku UMKM lokal.
+                    </div>
                 </div>
 
                 <div class="program-card">
                     <div class="program-icon">💡</div>
                     <div class="program-name">Bank Ide</div>
-                    <div class="program-desc">Wadah penampungan ide kreatif warga untuk solusi permasalahan sosial & ekonomi.</div>
+                    <div class="program-desc">Wadah penampungan ide kreatif warga untuk solusi permasalahan sosial &
+                        ekonomi.</div>
                 </div>
 
                 <div class="program-card">
@@ -1146,13 +1195,15 @@
                 <div class="program-card">
                     <div class="program-icon">🕌</div>
                     <div class="program-name">Manajemen Masjid</div>
-                    <div class="program-desc">Optimalisasi fungsi masjid sebagai pusat peradaban dan kemandirian ekonomi.</div>
+                    <div class="program-desc">Optimalisasi fungsi masjid sebagai pusat peradaban dan kemandirian
+                        ekonomi.</div>
                 </div>
 
                 <div class="program-card">
                     <div class="program-icon">🌾</div>
                     <div class="program-name">Holding Pertanian</div>
-                    <div class="program-desc">Konsolidasi sektor pertanian untuk meningkatkan kesejahteraan petani desa.</div>
+                    <div class="program-desc">Konsolidasi sektor pertanian untuk meningkatkan kesejahteraan petani desa.
+                    </div>
                 </div>
 
                 <div class="program-card">
@@ -1164,12 +1215,14 @@
                 <div class="program-card">
                     <div class="program-icon">♻️</div>
                     <div class="program-name">Bank Sampah Slatri</div>
-                    <div class="program-desc">Inisiatif pengelolaan lingkungan dan ekonomi sirkular berbasis warga.</div>
+                    <div class="program-desc">Inisiatif pengelolaan lingkungan dan ekonomi sirkular berbasis warga.
+                    </div>
                 </div>
             </div>
 
             <div class="program-more-wrap">
-                <a href="#" class="btn-secondary" style="display: inline-block;">Lihat Seluruh 16 Program Kerja & Inisiatif Sosial →</a>
+                <a href="#" class="btn-secondary" style="display: inline-block;">Lihat Seluruh 16 Program Kerja &
+                    Inisiatif Sosial →</a>
             </div>
         </section>
 
@@ -1179,14 +1232,16 @@
                 <div class="banner-card curhat">
                     <span class="banner-badge">RUANG ASPIRASI</span>
                     <h3 class="banner-title">Pusat Curhat Rakyat</h3>
-                    <p style="font-size: 14px; opacity: 0.9;">Punya keluhan, saran, atau masalah seputar pelayanan dan fasilitas di Malang? Sampaikan langsung kepada Sam HC.</p>
+                    <p style="font-size: 14px; opacity: 0.9;">Punya keluhan, saran, atau masalah seputar pelayanan dan
+                        fasilitas di Malang? Sampaikan langsung kepada Sam HC.</p>
                     <a href="#" class="banner-btn">Tulis Curhatan Anda →</a>
                 </div>
 
                 <div class="banner-card bank-ide">
                     <span class="banner-badge">KOLABORASI GAGASAN</span>
                     <h3 class="banner-title">Bank Ide Rakyat</h3>
-                    <p style="font-size: 14px; opacity: 0.9;">Punya ide inovatif untuk pemuda, UMKM, atau lingkungan desa? Sumbangkan ide terbaikmu untuk direalisasikan bersama.</p>
+                    <p style="font-size: 14px; opacity: 0.9;">Punya ide inovatif untuk pemuda, UMKM, atau lingkungan
+                        desa? Sumbangkan ide terbaikmu untuk direalisasikan bersama.</p>
                     <a href="#" class="banner-btn">Kirimkan Ide Anda →</a>
                 </div>
             </div>
@@ -1200,7 +1255,8 @@
             <div class="footer-grid">
                 <div>
                     <div class="footer-brand">SAMHC • HERI CAHYONO</div>
-                    <p style="font-size: 14px; max-width: 400px; line-height: 1.6;">Website resmi repositori artikel, berita kegiatan, serta catatan perjalanan kemanusiaan Heri Cahyono (Sam HC).</p>
+                    <p style="font-size: 14px; max-width: 400px; line-height: 1.6;">Website resmi repositori artikel,
+                        berita kegiatan, serta catatan perjalanan kemanusiaan Heri Cahyono (Sam HC).</p>
                 </div>
                 <div class="footer-links">
                     <h4>Navigasi Utama</h4>
@@ -1278,4 +1334,5 @@
         });
     </script>
 </body>
+
 </html>
